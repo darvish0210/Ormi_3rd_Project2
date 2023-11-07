@@ -18,7 +18,8 @@
 + Django 4.2.7
 
 ## 3. 개발일정
-![WBS](https://github.com/darvish0210/Ormi_3rd_Project2/assets/142385778/00d401ee-088f-4349-b292-0ddf9efa6ade)
+
+![WBS](https://github.com/darvish0210/Ormi_3rd_Project2/assets/142385778/a96db635-780a-4177-af4c-09b7a2d4765e)
 
 
 
@@ -26,5 +27,6 @@
 ![구조](https://github.com/darvish0210/Ormi_3rd_Project2/assets/142385778/9d8fa407-0c49-4522-b720-a9933f23ef5b)
 
 ## 5. 순서도
-![순서도](https://github.com/darvish0210/Ormi_3rd_Project2/assets/142385778/9752b95c-3ff5-4fe6-98a0-7f5aa7f311f2)
+
+![순서도](https://github.com/darvish0210/Ormi_3rd_Project2/assets/142385778/c6a4dcfe-855f-4b97-ba83-1e944f43481c)
 
