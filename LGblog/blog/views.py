@@ -19,7 +19,7 @@ class PostListView(ListView):
     template_name = 'blog/post-list.html'
     context_object_name = 'posts'
     ordering = ['-created_at']
-    paginate_by = 10
+    # paginate_by = 10
     def get_queryset(self):
         queryset = super().get_queryset()
         search_query = self.request.GET.get('q')
@@ -33,6 +33,12 @@ class PostDetailView(DetailView):
     model = Post
     template_name = 'blog/post-detail.html'
     context_object_name = 'post'
+    def get_object(self, queryset=None):
+        # DetailView의 메서드를 오버라이드하여 조회수 증가 처리를 추가
+        obj = super().get_object(queryset)
+        obj.views += 1
+        obj.save()
+        return obj
 
 class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
@@ -80,8 +86,6 @@ class CustomLogoutView(LogoutView):
 class StatsView(View):
     template_name = 'blog/stats.html'
     def get(self, request):
-        # 통계 데이터를 필요에 따라 가져오는 로직을 추가
-        # 여기서는 더미 데이터를 사용하는 예시입니다.
         stats_data = {
             'total_users': 1000,
             'total_posts': 5000,

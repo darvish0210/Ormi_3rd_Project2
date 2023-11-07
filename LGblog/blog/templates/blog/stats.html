@@ -1,3 +1,28 @@
-{% extends "./base.html" %}
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <title>선수 스탯 조회</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>선수 스탯 조회</h1>
 
-<h1>스탯 조회소입니다.</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="player-name" class="form-label">선수 이름:</label>
+                <input type="text" class="form-control" id="player-name" name="player_name" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">조회</button>
+        </form>
+
+        <h2>스탯 조회 결과:</h2>
+        <!-- 스탯 결과를 여기에 출력 -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

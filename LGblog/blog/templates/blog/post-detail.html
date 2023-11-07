@@ -13,7 +13,7 @@
           <div class="card-body">
             <h5 class="card-title">게시글 정보</h5>
             <p class="card-text">작성자: {{ post.author }}</p>
-            <p class="card-text">작성일: {{ post.created_date }}</p>
+            <p class="card-text">작성일: {{ post.created_at }}</p>
             <p class="card-text">조회수: {{ post.views }}</p>
           </div>
           <a href="{% url 'post-update' post.id %}" class="btn btn-primary">글 수정</a>
