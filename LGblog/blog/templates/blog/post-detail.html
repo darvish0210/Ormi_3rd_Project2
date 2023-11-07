@@ -1,0 +1,26 @@
+{% extends "./base.html" %}
+
+{% block content %}
+  <div class="container">
+    <h1 class="my-4">{{ post.title }}</h1>
+
+    <div class="row">
+      <div class="col-md-8">
+        <p>{{ post.content }}</p>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">게시글 정보</h5>
+            <p class="card-text">작성자: {{ post.author }}</p>
+            <p class="card-text">작성일: {{ post.created_date }}</p>
+            <p class="card-text">조회수: {{ post.views }}</p>
+          </div>
+          <a href="{% url 'post-update' post.id %}" class="btn btn-primary">글 수정</a>
+          <a href="{% url 'post-delete' post.id %}" class="btn btn-danger">글 삭제</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

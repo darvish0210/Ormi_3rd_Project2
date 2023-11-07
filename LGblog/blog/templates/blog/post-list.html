@@ -1,0 +1,34 @@
+{% extends "./base.html" %}
+
+{% block content %}
+  <div class="container">
+    <h1 class="my-4">게시물 목록</h1>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>번호</th>
+          <th>제목</th>
+          <th>작성자</th>
+          <th>작성일</th>
+          <th>조회수</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for post in posts %}
+          <tr>
+            <td>{{ post.id }}</td>
+            <td><a href="{% url 'post-detail' post.id %}">{{ post.title }}</a></td>
+            <td>{{ post.author }}</td>
+            <td>{{ post.created_date|date:"Y-m-d H:i:s" }}</td> {# 작성일 표시, 날짜 형식을 원하는 대로 조정 #}
+            <td>{{ post.views }}</td> {# 조회수 표시 #}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <form method="get" action="{% url 'post-list' %}">
+      <input type="text" name="q" placeholder="검색어를 입력하세요">
+      <button type="submit">검색</button>
+    </form>
+  </div>
+{% endblock %}
