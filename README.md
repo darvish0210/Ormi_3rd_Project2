@@ -18,72 +18,13 @@
 + Django 4.2.7
 
 ## 3. 개발일정
+![WBS](https://github.com/darvish0210/Ormi_3rd_Project2/assets/142385778/00d401ee-088f-4349-b292-0ddf9efa6ade)
 
 
 
 ## 4. 프로젝트 구조
-
-├─blog
-│  │  admin.py
-│  │  apps.py
-│  │  forms.py
-│  │  models.py
-│  │  tests.py
-│  │  urls.py
-│  │  views.py
-│  │  __init__.py
-│  │  
-│  ├─migrations
-│  │  │  0001_initial.py
-│  │  │  0002_post_modified_date.py
-│  │  │  0003_post_views.py
-│  │  │  0004_remove_post_modified_date.py
-│  │  │  0005_alter_post_views.py
-│  │  │  __init__.py
-│  │  │  
-│  │  └─__pycache__
-│  │          0001_initial.cpython-312.pyc
-│  │          0002_post_modified_date.cpython-312.pyc
-│  │          0003_post_views.cpython-312.pyc
-│  │          0004_remove_post_modified_date.cpython-312.pyc
-│  │          0005_alter_post_views.cpython-312.pyc
-│  │          __init__.cpython-312.pyc
-│  │          
-│  ├─templates
-│  │  ├─blog
-│  │  │      base.html
-│  │  │      post-confirm-delete.html
-│  │  │      post-detail.html
-│  │  │      post-form.html
-│  │  │      post-list.html
-│  │  │      signup.html
-│  │  │      
-│  │  │      
-│  │  └─registration
-│  │          logged_out.html
-│  │          login.html
-│  │          
-│  └─__pycache__
-│          admin.cpython-312.pyc
-│          apps.cpython-312.pyc
-│          forms.cpython-312.pyc
-│          models.cpython-312.pyc
-│          urls.cpython-312.pyc
-│          views.cpython-312.pyc
-│          __init__.cpython-312.pyc
-│          
-├─myblog
-│  │  asgi.py
-│  │  settings.py
-│  │  urls.py
-│  │  wsgi.py
-│  │  __init__.py
-│  │  
-│  └─__pycache__
-│          settings.cpython-312.pyc
-│          urls.cpython-312.pyc
-│          wsgi.cpython-312.pyc
-│          __init__.cpython-312.pyc
+![구조](https://github.com/darvish0210/Ormi_3rd_Project2/assets/142385778/9d8fa407-0c49-4522-b720-a9933f23ef5b)
 
 ## 5. 순서도
+![순서도](https://github.com/darvish0210/Ormi_3rd_Project2/assets/142385778/9752b95c-3ff5-4fe6-98a0-7f5aa7f311f2)
 
